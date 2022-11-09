@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+    {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}"> {{ message }}</div>
+
+    {% endfor %}
+    {% endif %}
+    <h1 class="mt-2">Goodreads haqida</h1>
+    <p>Goodreads 2006 yil oxiri/2007 yil boshida dasturiy ta'minot muhandisi va tadbirkor Otis Chandler va Elizabet Chandler tomonidan tashkil etilgan. Saytni tashkil etishdan maqsad odamlarga o'ziga kerakli va qiziqqan kitoblarni topish va ulardan foydalanish imkonini berishdir. Bu o'qishga bo'lgan qiziqishning oshishiga hissa qo'shadi, chunki kutubxona javonlarida uzoq vaqt qidirmasdan sevimli kitobni topish qobiliyati tobora ko'proq qiziqqan o'quvchilarni jalb qilmoqda. Tashkil etilganining birinchi yilida kompaniya hech qanday moliyaviy yordamsiz ishlagan. 2007 yil dekabr oyidan boshlab saytga 750 000 AQSh dollari miqdoridagi birinchi moliyaviy investitsiyalar tushmoqda. 2009-yilda Goodreads yana 2 million dollar oladi.2010-yilning oktyabr oyidan boshlab Goodreads oʻzining API -ni ochdi., bu ishlab chiquvchilar uchun imkoniyatlarni oshirdi va ularga o'z reytinglariga kirish imkoniyatini berdi. Goodreads veb-sayti, shuningdek, onlayn do'konda foydalanuvchilar tomonidan qilingan xaridlardan komissiya foizlaridan bahramand bo'ladi . 2011 yilda sayt o'ziga xos tavsiyalar va tahliliy kitoblar dasturi bo'lgan Discovereads-ni sotib oldi. Bu o'rganish algoritmi va kitob tahlilidan foydalanish qobiliyatini ta'minlaydi . O'quvchi qaysi kitoblarni afzal ko'rgani, qaysi kitoblarni avvalroq afzal ko'rgani, bugungi kunda qaysi kitoblarni afzal ko'rayotgani, didi o'xshash odamlarga yoqadigan kitoblar haqida berilgan ma'lumotlarga asoslanib, tavsiya etilgan adabiyotlarning shaxsiy tanlovi amalga oshiriladi. Foydalanuvchi o'nta kitobni besh ballik tizimda baholagandan so'ng, unga tavsiyalar tayyorlash boshlanadi.
+
+2012 yilning noyabriga kelib Goodreads ro'yxatdan o'tgan foydalanuvchilarning soni 12 millionga yetdi. Sayt kataloglariga 395 million dona kitob joylashtirildi, 20 mingdan ortiq kitob klublari tashkil etildi. </p>
+     </div>
+
+{% endblock %}
